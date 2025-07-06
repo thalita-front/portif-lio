@@ -24,20 +24,3 @@ document.getElementById("formContato").addEventListener("submit", async function
     alert("⚠️ Erro de conexão. Verifique sua internet.");
   }
 });
-
-
-  const img3d = document.querySelector('.img-hover3d');
-  const container = document.querySelector('#imagem-direita');
-
-  container.addEventListener('mousemove', (e) => {
-    const { width, height, left, top } = container.getBoundingClientRect();
-    const x = e.clientX - left - width / 2;
-    const y = e.clientY - top - height / 2;
-    const rotateX = -y / 20;
-    const rotateY = x / 20;
-    img3d.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-  });
-
-  container.addEventListener('mouseleave', () => {
-    img3d.style.transform = 'rotateX(0deg) rotateY(0deg)';
-  });
