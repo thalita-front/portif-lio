@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Thalita Vitoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="fotos/Logotipo para empresa de engenharia comunicação e tecnologia com planeta.png" type="image/x-icon">
+</head>
+<body>
+      <div class="background-tech"></div>
+  <!-- Menu de navegação fixa com links para cada seção pelo ID -->
+  <header>
+    <nav class="menu">
+    <a href="#inicio" class="destaque">
+      <img src="fotos/Logotipo para empresa de engenharia comunicação e tecnologia com planeta.png" alt="Logo Portfólio" />
+      <span class="nome-logo">Porti<span style="color: #3B6E44;">fólio</span></span>
+    </a>
+    <div class="links-demais">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </div> 
+  </nav>
+  </header>
+
+<div class="grid-container">
+  <section id="inicio">
+    <div class="conteudo-com-margin">
+      <h2>Olá, meu nome é</h2>
+      <h1>Thalita Vitoria</h1>
+      <p>Entre arte e lógica, encontrei o meu lugar.</p>
+
+      <ul class="example-2">
+        <li class="icon-content">
+          <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/5531986259032" target="_blank" rel="noopener noreferrer">
+            <div class="filled"></div>
+            <img src="fotos/icons8-whatsapp-50 (1).png" alt="Whatsapp" />
+          </a>
+          <div class="tooltip">Whatsapp</div>
+        </li>
+        <li class="icon-content">
+          <a data-social="github" aria-label="github" href="https://github.com/thalita-front" target="_blank">
+            <div class="filled"></div>
+            <img src="fotos/icons8-github-50.png" alt="github" />
+          </a>
+          <div class="tooltip">GitHub</div>
+        </li>
+        <li class="icon-content">
+          <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/thalitzhc/?next=%2F" target="_blank">
+            <div class="filled"></div>
+            <img src="fotos/icons8-instagram-50.png" alt="Instagram" />
+          </a>
+          <div class="tooltip">Instagram</div>
+        </li>
+      </ul>
+
+      <a href="#projetos" class="button">Ver projetos</a>
+    </div>
+  </section>
+
+ 
+</div>
+
+<section id="sobre">
+  <div class="container">
+    <h2 class="titulo">Sobre mim</h2>
+
+    <div class="box">
+      <p>
+        Estudante de ADS apaixonada por tecnologia. <br>
+        Criativa, curiosa e focada em evolução constante. <br>
+        Moro em João Monlevade (MG) e estudo na UNINTER (EAD).
+      </p>
+    </div>
+
+    <div class="box">
+      <p>
+        Formações: <br>
+        - Superior: ADS – UNINTER (1º semestre) <br>
+        - Técnico: Administração (concluído) <br>
+      </p>
+    </div>
+
+    <div class="tech-icons">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/html-5--v1.png" alt="HTML" />
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/css3.png" alt="CSS" class="css-icon" />
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/javascript-logo.png" alt="JavaScript" />
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/python.png" alt="Python" />
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/mysql-logo.png" alt="MySQL" />
+   </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <h2 class="titulo-projetos">Projetos</h2>
+  <div class="cards-container">
+
+    <a href="https://thalita-front.github.io/cronometro.estudos/" target="_blank">
+      <div class="card">
+        <img src="fotos/cron.png" alt="Projeto 1" />
+        <div class="overlay">
+          <p>CRONÔMETRO DE ESTUDOS <br>Clique para visualizar o projeto.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://thalita-front.github.io/calculator/" target="_blank">
+      <div class="card">
+        <img src="fotos/calcula.png" alt="Projeto 2" />
+        <div class="overlay">
+          <p>CALCULADORA <br>Clique para visualizar o projeto.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://thalita-front.github.io/cadastrolivros/" target="_blank">
+      <div class="card">
+        <img src="fotos/biblio.png" alt="Projeto 3" />
+        <div class="overlay">
+          <p>BIBLIOTECA WEB <br>Clique para visualizar o projeto.</p>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section id="contato">
+  <div class="form-card1">
+    <div class="form-card2">
+      <form class="form" id="formContato">
+        <p class="form-heading">Entre em Contato</p>
+
+        <div class="form-field">
+          <input required placeholder="Nome" class="input-field" type="text" name="name" />
+        </div>
+
+        <div class="form-field">
+          <input required placeholder="Email" class="input-field" type="email" name="email" />
+        </div>
+
+        <div class="form-field">
+          <input required placeholder="Assunto" class="input-field" type="text" name="subject" />
+        </div>
+
+        <div class="form-field">
+          <textarea required placeholder="Mensagem" cols="30" rows="3" class="input-field" name="message"></textarea>
+        </div>
+
+        <button class="sendMessage-btn" type="submit">Enviar Mensagem</button>
+
+        <!-- Mensagem de sucesso -->
+        <p id="mensagemStatus" style="display:none; color: #3B6E44; font-weight: bold; margin-top: 15px; text-align: center;">
+          ✅ Mensagem enviada com sucesso!
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="formulario.js"></script>
+
+</body>
+</html>
